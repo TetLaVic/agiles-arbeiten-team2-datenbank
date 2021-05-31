@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import styles from './ContactForm.module.css';
 import { connect } from 'react-redux';
 import operations from '../../redux/ContactForm/ContactForm-operations';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 class ContactForm extends Component {
@@ -55,9 +55,9 @@ class ContactForm extends Component {
             onChange={this.handleChange}
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
-          Add contact
-        </Button>
+        {/* <Button variant="primary" type="submit">
+          Add student
+        </Button> */}
       </Form>
     );
   }
