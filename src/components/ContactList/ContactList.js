@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import ContactListItem from './ContactListItem/ContactListItem';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import styles from './ContactList.module.css';
 import { connect } from 'react-redux';
 import operations from '../../redux/ContactForm/ContactForm-operations';
@@ -11,7 +11,7 @@ class ContactList extends Component {
     this.props.onLoad();
   }
   render() {
-    const { contactsList } = this.props;
+    const { contactsList, onDeleteContact } = this.props;
     return (
       <ul>
         {contactsList.map(({ name, id }) => {
@@ -21,7 +21,7 @@ class ContactList extends Component {
               // number={number}
               key={id}
               id={id}
-              // onDeleteContact={onDeleteContact}
+              onDeleteContact={onDeleteContact}
               className={styles.contactList}
             />
           );
@@ -31,9 +31,9 @@ class ContactList extends Component {
   }
 }
 
-// ContactList.propTypes = {
-//   onDeleteContact: PropTypes.func.isRequired,
-// };
+ContactList.propTypes = {
+  onDeleteContact: PropTypes.func.isRequired,
+};
 
 // const getContactsToShow = ({ filter, items }) => {
 //   const normalizedFilter = filter.toLowerCase();
@@ -47,7 +47,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  // onDeleteContact: contactId => dispatch(operations.deleteContact(contactId)),
+  onDeleteContact: contactId => dispatch(operations.deleteContact(contactId)),
   onLoad: () => dispatch(operations.fetchContacts()),
 });
 

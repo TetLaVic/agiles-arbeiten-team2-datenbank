@@ -23,7 +23,7 @@ const ModalWindow = ({ children }) => {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          <Button type="submit" variant="primary" onClick={handleClose}>
             Save Changes
           </Button>
         </Modal.Footer>

@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 import styles from './ContactForm.module.css';
 import { connect } from 'react-redux';
 import operations from '../../redux/ContactForm/ContactForm-operations';
-// import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 class ContactForm extends Component {
-  state = { name: '', number: '' };
+  state = { name: '', semester: '' };
 
   reset = () => {
-    this.setState({ name: '', number: '' });
+    this.setState({ name: '', semester: '' });
   };
 
   handleChange = event => {
@@ -45,19 +45,19 @@ class ContactForm extends Component {
           />
         </Form.Group>
 
-        <Form.Group controlId="formBasicNumber">
-          <Form.Label>Number</Form.Label>
+        <Form.Group controlId="formBasicSemester">
+          <Form.Label>Semester</Form.Label>
           <Form.Control
-            type="tel"
-            name="number"
-            placeholder="Enter phone number"
-            value={this.state.number}
+            type="number"
+            name="semester"
+            placeholder="Semester"
+            value={this.state.semester}
             onChange={this.handleChange}
           />
         </Form.Group>
-        {/* <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit">
           Add student
-        </Button> */}
+        </Button>
       </Form>
     );
   }
