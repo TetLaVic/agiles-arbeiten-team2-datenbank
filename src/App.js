@@ -9,6 +9,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './App.css';
+import sModal from './components/Modal/Modal.module.css';
+import sContactList from './components/ContactList/ContactList.module.css';
 // import { v4 as genId } from 'uuid';
 
 class App extends Component {
@@ -23,7 +25,7 @@ class App extends Component {
 
               <ModalWindow
                 text={"Add student's info"}
-                className={styles.ModalWindow}
+                className={sModal.ModalWindow}
               >
                 {<ContactForm />}
               </ModalWindow>
@@ -34,7 +36,7 @@ class App extends Component {
             <Col>
               <h2 className={styles.h2Header}>Students and employees</h2>
               <Filter />
-              <ContactList />
+              <ContactList className={sContactList.ContactList} />
             </Col>
           </Row>
         </Container>

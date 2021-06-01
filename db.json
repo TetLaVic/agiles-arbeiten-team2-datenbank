@@ -1,19 +1,24 @@
 {
   "contacts": [
     {
-      "name": "tett",
-      "semester": "5",
-      "id": "AWk3zqO"
-    },
-    {
       "name": "Tetiana Lavrenko",
       "semester": "6",
       "id": "esM6MGg"
     },
     {
-      "name": "kiwi",
-      "semester": "1",
-      "id": "d8c8zSd"
+      "name": "Iuliia Lavrenko",
+      "semester": "5",
+      "id": "5nihhPs"
+    },
+    {
+      "name": "Carina Holoch",
+      "semester": "3",
+      "id": "sBBrZ0R"
+    },
+    {
+      "name": "Angela Merkel",
+      "semester": "7",
+      "id": "a3k0Dj8"
     }
   ]
 }
