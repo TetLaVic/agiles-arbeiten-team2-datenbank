@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-// import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import Btn from './Button';
+import styles from './Button/Button.module.css';
 
-const ModalWindow = ({ children }) => {
+const ModalWindow = ({ children, text }) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -10,10 +12,9 @@ const ModalWindow = ({ children }) => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Add student's info
-      </Button>
-
+      <Btn onClick={handleShow} className={styles.Btn}>
+        {text}
+      </Btn>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>

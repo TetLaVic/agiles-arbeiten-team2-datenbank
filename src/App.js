@@ -19,12 +19,20 @@ class App extends Component {
         <Container>
           <Row>
             <Col>
-              <h2 className={styles.h2Header}>Phonebook</h2>
+              <h2 className={styles.h2Header}>Talent management</h2>
 
-              <ModalWindow>{<ContactForm />}</ModalWindow>
+              <ModalWindow
+                text={"Add student's info"}
+                className={styles.ModalWindow}
+              >
+                {<ContactForm />}
+              </ModalWindow>
+              <ModalWindow text={"Add employee's info"}>
+                {<ContactForm />}
+              </ModalWindow>
             </Col>
             <Col>
-              <h2 className={styles.h2Header}>Contacts</h2>
+              <h2 className={styles.h2Header}>Students and employees</h2>
               <Filter />
               <ContactList />
             </Col>
