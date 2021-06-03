@@ -9,5 +9,10 @@
 .inputFilter {
   display: block;
   margin-right: 10px;
+  margin-bottom: 10px;
   width: 250px;
+}
+
+.Filter {
+  margin-bottom: 20px;
 }

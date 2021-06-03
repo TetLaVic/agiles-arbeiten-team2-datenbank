@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './App.css';
 import sModal from './components/Modal/Modal.module.css';
 import sContactList from './components/ContactList/ContactList.module.css';
+import sFilter from './components/Filter/Filter.module.css';
 // import { v4 as genId } from 'uuid';
 
 class App extends Component {
@@ -35,8 +36,8 @@ class App extends Component {
             </Col>
             <Col>
               <h2 className={styles.h2Header}>Students and employees</h2>
-              <Filter />
-              <ContactList className={sContactList.ContactList} />
+              <Filter className={sFilter.Filter} />
+              <ContactList className={sContactList.CnctList} />
             </Col>
           </Row>
         </Container>

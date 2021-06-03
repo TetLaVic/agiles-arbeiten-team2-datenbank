@@ -3,9 +3,12 @@
   width: 300px;
   display: flex;
   flex-flow: column;
-  margin-top: 30px !important;
 }
 
 .ListGroup {
   width: auto;
+}
+
+.CncttList {
+  margin-top: 20px !important;
 }
