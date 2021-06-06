@@ -2,7 +2,8 @@ import { Component } from 'react';
 
 class TalentManagement extends Component {
   render() {
-    return;
+    return<>
+    <h2>Talent management</h2></>;
   }
 }
 
