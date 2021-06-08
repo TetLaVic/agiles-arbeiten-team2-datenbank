@@ -20,7 +20,7 @@ class Filter extends Component {
           name="filter"
           value={filterState}
           onChange={onFilterChange}
-          placeholder="Search"
+          placeholder="Enter name..."
           className="mr-sm-2"
         />
         <Button variant="primary">Search</Button>

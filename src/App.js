@@ -15,6 +15,7 @@ import AppBar from './components/AppBar';
 // import sFilter from './components/Filter/Filter.module.css';
 import React, { Suspense, lazy } from "react";
 import { Route, Switch } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import { v4 as genId } from 'uuid';
 
 
