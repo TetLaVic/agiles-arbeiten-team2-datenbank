@@ -29,15 +29,18 @@ class App extends Component {
                 className={sModal.ModalWindow}
               >
                 {<ContactForm />}
-                <ModalWindow
-                text={"Test"}> 
-                </ModalWindow>
-                {<ContactForm />}
                 
               </ModalWindow>
               <ModalWindow text={"Add employee's info"}>
                 {<ContactForm />}
               </ModalWindow>
+              <ModalWindow
+                text={"Test"}> 
+                {<ContactForm />}
+              </ModalWindow>
+                
+                
+
             </Col>
             <Col>
               <h2 className={styles.h2Header}>Students and employees</h2>
