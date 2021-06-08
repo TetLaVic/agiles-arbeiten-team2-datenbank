@@ -2,8 +2,7 @@
   "name": "agiles-arbeiten-team2-datenbank",
   "version": "0.1.0",
   "private": true,
-  "homepage": "htpps://tetlavic.github.io/agiles-arbeiten-team2-datenbank",
-  "dependencies": {
+   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
