@@ -39,7 +39,7 @@ const TalentManagement = () => {
                </ModalWindow> */}
              </Col>
              <Col>
-               <h2>Employees</h2>
+               <h2>Mitarbeiter</h2>
                <Filter className={sFilter.Filter} />
                <ContactList className={sContactList.CnctList} />
              </Col>
