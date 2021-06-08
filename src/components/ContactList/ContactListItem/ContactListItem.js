@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link, withRouter } from "react-router-dom";
 import PropTypes from 'prop-types';
 import styles from './ContactListItem.module.css';
 
 const ContactListItem = ({ name, id, onDeleteContact }) => {
   return (
     <li id={id} className={styles.listItem}>
+      <Link className={styles.Link}
+                to={{ pathname: `/profile/${name}` }}>
       {name}
       <button
         onClick={() => {
@@ -14,6 +17,7 @@ const ContactListItem = ({ name, id, onDeleteContact }) => {
       >
         Delete
       </button>
+      </Link>
     </li>
   );
 };
@@ -24,4 +28,4 @@ ContactListItem.propTypes = {
   id: PropTypes.string,
   onDeleteContact: PropTypes.func,
 };
-export default ContactListItem;
+export default withRouter(ContactListItem);
