@@ -18,9 +18,9 @@ import { Route, Switch } from "react-router-dom";
 // import { v4 as genId } from 'uuid';
 
 
-const MAList = lazy(() =>
-  import("./pages/MAList" /*WebpackChunkName: MAList */)
-);
+// const MAList = lazy(() =>
+//   import("./pages/MAList" /*WebpackChunkName: MAList */)
+// );
 const TalentManagement = lazy(() =>
   import("./pages/TalentManagement" /*WebpackChunkName: TalentManagement */)
 );
@@ -38,10 +38,10 @@ const App = () => {
         }
       >
         <Switch>
-          <Route exact path="/" component={MAList} />
+          <Route exact path="/" component={TalentManagement} />
           <Route path="/:name" component={Profile} />
-          <Route path="/talent" component={TalentManagement} />
-          <Route component={MAList} />
+          {/* <Route path="/talent" component={TalentManagement} /> */}
+          <Route component={TalentManagement} />
         </Switch>
       </Suspense>
     </>

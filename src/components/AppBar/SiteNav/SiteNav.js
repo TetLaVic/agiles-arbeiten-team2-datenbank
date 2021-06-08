@@ -5,7 +5,7 @@ import styles from "./SiteNav.module.css";
 const SiteNav = () => {
   return (
     <ul className={styles.SiteNav}>
-      <li className={styles.SiteNavLink}>
+      {/* <li className={styles.SiteNavLink}>
         <NavLink
           to="/"
           exact
@@ -14,10 +14,10 @@ const SiteNav = () => {
         >
           Employee profiles
         </NavLink>
-      </li>
+      </li> */}
       <li className={styles.SiteNavLink}>
         <NavLink
-          to="/talent-management"
+          to="/"
           className={styles.NavLink}
           activeClassName={styles.NavLinkActive}
         >
