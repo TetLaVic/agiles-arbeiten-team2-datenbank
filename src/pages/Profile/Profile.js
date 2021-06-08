@@ -93,14 +93,14 @@ const Profile = () => {
                       <tbody>
                         <tr>
                           <td class="field">Agiles Arbeiten</td>
-                          <td class="value">ja</td>
-                          <td>ja</td>
+                          <td class="value">Projektmanagement</td>
+                          <td>Teamarbeit</td>
                           <td>nein</td>
                           <td>nein</td>
                         </tr>
                         <tr>
                           <td class="field">Professional Scrum Master</td>
-                          <td class="value">ja</td>
+                          <td class="value">Projektmanagement</td>
                           <td>nein</td>
                           <td>nein</td>
                           <td>nein</td>
@@ -109,16 +109,16 @@ const Profile = () => {
                           <td class="field">
                             Storytelling für Innovation und Change
                           </td>
-                          <td class="value">ja</td>
-                          <td>ja</td>
-                          <td>ja</td>
+                          <td class="value">Projektmanagement</td>
+                          <td>Kommunikation</td>
+                          <td>Öffentlichkeitsarbeit</td>
                           <td>nein</td>
                         </tr>
                         <tr>
                           <td class="field">
                             Agiles Projektmanagement mit Scrum
                           </td>
-                          <td class="value">ja</td>
+                          <td class="value">Projektmanagement</td>
                           <td>nein</td>
                           <td>nein</td>
                           <td>nein</td>
@@ -129,19 +129,19 @@ const Profile = () => {
                           </td>
                           <td class="value">nein</td>
                           <td>nein</td>
-                          <td>ja</td>
+                          <td>Personal und Organisation</td>
                           <td>nein</td>
                         </tr>
                       </tbody>
                     </table>
-                    <table class="table table-profile">
+                   {/* <table class="table table-profile">
                       <thead>
                         <tr>
                           <th colspan="2">
                             Kompetenzbereich Methodenkompetenz
                           </th>
                         </tr>
-                      </thead>
+                      </thead>*/}
                       {/* <tbody>
                                         <tr>
                                             <td class="field">Mobile Phones</td>
@@ -180,13 +180,13 @@ const Profile = () => {
                                             </td>
                                         </tr>
                                     </tbody> */}
-                    </table>
+                    {/*</table>
                     <table class="table table-profile">
                       <thead>
                         <tr>
                           <th colspan="2">Kompetenzbereich Sozialkompetenz</th>
                         </tr>
-                      </thead>
+                    </thead>*/}
                       {/* <tbody>
                                         <tr>
                                             <td class="field">Birth of Date</td>
@@ -217,7 +217,7 @@ const Profile = () => {
                                             </td>
                                         </tr>
                                     </tbody> */}
-                    </table>
+                    {/*</table>*/}
                   </div>
                 </div>
               </div>
