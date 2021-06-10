@@ -15,19 +15,22 @@ import Col from 'react-bootstrap/Col';
 import sContactList from '../../components/ContactList/ContactList.module.css';
 import sFilter from '../../components/Filter/Filter.module.css';
 
+// const competenceList = {Methodenkompetenz: [], Sozialkompetenz: [], Fachkompetenz: [], Selbstkompetenz: []} 
+
 
 
 const TalentManagement = () => {
     return(
         <>
          <Container>
+           <h2>Wonach suchen Sie?</h2>
            <Row>
              <Col>
-               <h2 >Kompetenzen</h2>
-<AccordionBtn text={"Methodenkompetenz"}/>
-<AccordionBtn text={"Sozialkompetenz"}/>
-<AccordionBtn text={"Fachkompetenz"}/>
-<AccordionBtn text={"Selbstkompetenz"}/>
+               <h4 >Kompetenzen</h4>
+<AccordionBtn text={"Methodenkompetenz"} subtext={['Problemlösung', 'Rhetorik', 'Präsentation','Moderation','Lernkompetenz','Lehrkompetenz/Didaktik','Projektmanagement']}/>
+<AccordionBtn text={"Sozialkompetenz"} subtext={['Kommunikation', 'Teamarbeit', 'Mitarbeiterführung']}/>
+<AccordionBtn text={"Fachkompetenz"} subtext={['Arbeitssicherheit', 'Datenschutz','EDV-Kenntnisse','Finanzmanagement','Fremdsprachen','Informationssicherheit','Marketing/Öffentlichkeitsarbeit','Personal und Organisation','Personalratsarbeit','Qulitätsmanagement','Recht und Verwaltungskompetenzen','Fachliche Schulungen in den FK', 'BSM', 'LS','ENG','INF','Sonstige Fachkenntnisse']}/>
+<AccordionBtn text={"Selbstkompetenz"} subtext={['Leistungsvermögen','Entschlusskraft','Intelligenz','Selbstkritik','Flexibilität','Selbstmanagement','Gesundheitskompetenz']}/>
                {/* <ModalWindow
                  text={"Add student's info"}
                  className={sModal.ModalWindow}
@@ -39,7 +42,7 @@ const TalentManagement = () => {
                </ModalWindow> */}
              </Col>
              <Col>
-               <h2>Mitarbeiter</h2>
+               <h4>Mitarbeiter</h4>
                <Filter className={sFilter.Filter} />
                <ContactList className={sContactList.CnctList} />
              </Col>

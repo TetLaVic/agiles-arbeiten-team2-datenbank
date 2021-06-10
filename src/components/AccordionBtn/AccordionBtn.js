@@ -3,8 +3,9 @@ import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
+import AccordionItem from './AccordionItem'
 
-const AccordionBtn = ({ text }) => {
+const AccordionBtn = ({text, subtext}) => {
   return (
     <Accordion defaultActiveKey="0">
       <Card>
@@ -16,27 +17,7 @@ const AccordionBtn = ({ text }) => {
         <Accordion.Collapse eventKey="1">
           <Card.Body>
             <ListGroup variant="flush">
-              <ListGroup.Item>
-                <Card.Link href="#">Projektmanagement</Card.Link>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <Card.Link href="#">Moderation</Card.Link>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <Card.Link href="#">Rhetorik</Card.Link>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <Card.Link href="#">Präsentation</Card.Link>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <Card.Link href="#">Problemlösung</Card.Link>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <Card.Link href="#">Lehrkompetenz/Didaktik</Card.Link>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <Card.Link href="#">Lernkompetenz</Card.Link>
-              </ListGroup.Item>
+              {subtext.map((item) => <ListGroup.Item key={item}><AccordionItem item={item}/></ListGroup.Item>)}
             </ListGroup>
           </Card.Body>
           {/* <Card.Body>Hello! I'm the body</Card.Body> */}
