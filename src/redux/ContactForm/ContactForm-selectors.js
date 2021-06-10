@@ -15,6 +15,9 @@ const getItems = state => state.contacts.items;
 // };
 
 const getContacts = createSelector([getFilter, getItems], (filter, items) => {
+  if (!filter) {
+    return [];
+  }
   const normalizedFilter = filter.toLowerCase();
   return items.filter(({ name }) =>
     name ? name.toLowerCase().includes(normalizedFilter) : false,
