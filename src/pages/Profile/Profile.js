@@ -1,5 +1,7 @@
 import React from 'react';
 // import "Profile.module.css"
+import AccordionBtn from '../../components/AccordionBtn';
+import AccordionItem from '../../components/AccordionBtn/AccordionItem';
 
 const Profile = () => {
   return (
@@ -92,14 +94,38 @@ const Profile = () => {
                       </thead>
                       <tbody>
                         <tr>
-                          <td class="field">Agiles Arbeiten</td>
+                          <td class="field">
+                            <AccordionBtn
+                              text={'Agiles Arbeiten'}
+                              subtext={[
+                                'Dauer: 8 UE',
+                                'Datum Beginn: 27.05.2021',
+                                'intern/extern: intern',
+                                'Anbieter: HSAS',
+                                'Trainer: Andrea Mross',
+                                'Zertifizierung: nein',
+                              ]}
+                            />
+                          </td>
                           <td class="value">Projektmanagement</td>
                           <td>Teamarbeit</td>
                           <td>nein</td>
                           <td>nein</td>
                         </tr>
                         <tr>
-                          <td class="field">Professional Scrum Master</td>
+                          <td class="field">
+                            <AccordionBtn
+                              text={'Professional Scrum Master'}
+                              subtext={[
+                                'Dauer: 16 UE',
+                                'Datum Beginn: -',
+                                'intern/extern: extern',
+                                'Anbieter: VDI / scrum.org',
+                                'Trainer: Ralph Jocham',
+                                'Zertifizierung: ja',
+                              ]}
+                            />
+                          </td>
                           <td class="value">Projektmanagement</td>
                           <td>nein</td>
                           <td>nein</td>
@@ -107,7 +133,17 @@ const Profile = () => {
                         </tr>
                         <tr>
                           <td class="field">
-                            Storytelling für Innovation und Change
+                            <AccordionBtn
+                              text={'Storytelling für Innovation und Change'}
+                              subtext={[
+                                'Dauer: 8 UE',
+                                'Datum Beginn: -',
+                                'intern/extern: intern',
+                                'Anbieter: -',
+                                'Trainer: Prof. Dr. Michael Müller',
+                                'Zertifizierung: nein',
+                              ]}
+                            />
                           </td>
                           <td class="value">Projektmanagement</td>
                           <td>Kommunikation</td>
@@ -116,7 +152,17 @@ const Profile = () => {
                         </tr>
                         <tr>
                           <td class="field">
-                            Agiles Projektmanagement mit Scrum
+                            <AccordionBtn
+                              text={'Agiles Projektmanagement mit Scrum'}
+                              subtext={[
+                                'Dauer: 8 UE',
+                                'Datum Beginn: 25.02.2021',
+                                'intern/extern: extern',
+                                'Anbieter: VWA',
+                                'Trainer: David Tan',
+                                'Zertifizierung: nein',
+                              ]}
+                            />
                           </td>
                           <td class="value">Projektmanagement</td>
                           <td>nein</td>
@@ -125,7 +171,17 @@ const Profile = () => {
                         </tr>
                         <tr>
                           <td class="field">
-                            Personal- und Organisationentwicklung
+                            <AccordionBtn
+                              text={'Personal- und Organisationentwicklung'}
+                              subtext={[
+                                'Dauer: 180 UE',
+                                'Datum Beginn: 15.04.2020',
+                                'intern/extern: extern',
+                                'Anbieter: Universität Ulm',
+                                'Trainer: Prof. Dr. Klaus Melchers',
+                                'Zertifizierung: ja',
+                              ]}
+                            />
                           </td>
                           <td class="value">nein</td>
                           <td>nein</td>
@@ -134,7 +190,7 @@ const Profile = () => {
                         </tr>
                       </tbody>
                     </table>
-                   {/* <table class="table table-profile">
+                    {/* <table class="table table-profile">
                       <thead>
                         <tr>
                           <th colspan="2">
@@ -142,7 +198,7 @@ const Profile = () => {
                           </th>
                         </tr>
                       </thead>*/}
-                      {/* <tbody>
+                    {/* <tbody>
                                         <tr>
                                             <td class="field">Mobile Phones</td>
                                             <td class="value">
@@ -187,7 +243,7 @@ const Profile = () => {
                           <th colspan="2">Kompetenzbereich Sozialkompetenz</th>
                         </tr>
                     </thead>*/}
-                      {/* <tbody>
+                    {/* <tbody>
                                         <tr>
                                             <td class="field">Birth of Date</td>
                                             <td class="value">
