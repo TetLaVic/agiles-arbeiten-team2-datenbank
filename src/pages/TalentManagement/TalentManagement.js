@@ -24,7 +24,13 @@ const TalentManagement = () => {
         <>
          <Container>
            <h2>Wonach suchen Sie?</h2>
-           <Row>
+           <Row>  
+             <Col>
+               <h4>Mitarbeiter</h4>
+               <Filter className={sFilter.Filter} />
+               <ContactList className={sContactList.CnctList} />
+             </Col>
+               
              <Col>
                <h4 >Kompetenzen</h4>
 <AccordionBtn text={"Methodenkompetenz"} subtext={['Problemlösung', 'Rhetorik', 'Präsentation','Moderation','Lernkompetenz','Lehrkompetenz/Didaktik','Projektmanagement']}/>
@@ -41,12 +47,7 @@ const TalentManagement = () => {
                  {<ContactForm />}
                </ModalWindow> */}
              </Col>
-             <Col>
-               <h4>Mitarbeiter</h4>
-               <Filter className={sFilter.Filter} />
-               <ContactList className={sContactList.CnctList} />
-             </Col>
-           </Row>
+             </Row>
          </Container>
        </>
     )

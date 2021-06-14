@@ -23,7 +23,8 @@ class Filter extends Component {
           placeholder="Namen eingeben..."
           className="mr-sm-2"
         />
-        <Button variant="primary">Suchen</Button>
+         {/* <Button variant="primary">Suchen</Button>*/}
+        <Button href="http://localhost:3000/profile/Christina%20Sick">Senden</Button>
       </Form>
     );
   }
